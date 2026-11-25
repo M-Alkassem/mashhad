@@ -1,0 +1,17 @@
+{
+  "name": "mashhad",
+  "owner": {
+    "name": "M-Alkassem",
+    "url": "https://github.com/M-Alkassem"
+  },
+  "metadata": {
+    "description": "Mashhad: cinematic 3D scroll heroes for landing pages, rendered locally in Blender. No AI video, no credits."
+  },
+  "plugins": [
+    {
+      "name": "mashhad",
+      "source": "./",
+      "description": "Cinematic 3D scroll scenes for any landing page, directed by Claude and rendered free on your own computer with Blender."
+    }
+  ]
+}

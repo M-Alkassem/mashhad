@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mashhad: cinematic 3D scroll heroes, rendered free on your laptop</title>
+<meta name="description" content="A Claude Code plugin that directs Blender to make cinematic 3D scroll scenes for any landing page. No AI video, no credits.">
+<script type="module" src="films/coffee/mashhad-film.js"></script>
+<style>
+  :root { color-scheme: dark; --ink: #f3ede4; --dim: rgba(243,237,228,.66); }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #050505; color: var(--ink); font: 17px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  mashhad-film .mf-layer { background: linear-gradient(rgba(0,0,0,.5), transparent 32%, transparent 62%, rgba(0,0,0,.55)); }
+  .beat { left: 0; right: 0; text-align: center; padding: 0 6vw; text-shadow: 0 2px 24px rgba(0,0,0,.6); }
+  .top { top: 11vh; } .bottom { bottom: 10vh; }
+  .kicker { letter-spacing: .3em; text-transform: uppercase; font-size: 12px; opacity: .8; }
+  h1, h2 { font-weight: 300; letter-spacing: -.02em; line-height: 1.05; }
+  h1 { font-size: clamp(38px, 6.4vw, 92px); margin-top: 12px; }
+  h2 { font-size: clamp(30px, 4.6vw, 64px); }
+  .lede { font-size: clamp(16px, 1.7vw, 21px); color: var(--dim); margin-top: 12px; }
+  .cta { display: inline-block; margin-top: 22px; padding: 14px 28px; border-radius: 999px; background: var(--ink); color: #0b0b0b; text-decoration: none; font-weight: 600; }
+  section.copy { max-width: 760px; margin: 0 auto; padding: 18vh 6vw; }
+  section.copy h2 { margin-bottom: 18px; }
+  section.copy p { color: var(--dim); margin-top: 14px; }
+  code { font: 15px ui-monospace, SFMono-Regular, Menlo, monospace; background: rgba(255,255,255,.07); padding: 2px 6px; border-radius: 6px; }
+  pre { margin-top: 18px; padding: 18px 20px; border-radius: 14px; background: rgba(255,255,255,.05); overflow-x: auto; font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  footer { text-align: center; padding: 10vh 6vw 14vh; color: var(--dim); font-size: 14px; }
+  footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<mashhad-film src="films/coffee" length="420">
+  <div class="beat top" data-from="0" data-to="0.3">
+    <div class="kicker">Mashhad · مشهد</div>
+    <h1>Landing pages that feel like film.</h1>
+  </div>
+  <div class="beat bottom" data-from="0.38" data-to="0.7">
+    <p class="lede">Every frame here was rendered on a laptop, in Blender, for free.<br>No AI video. No credits.</p>
+  </div>
+  <div class="beat bottom" data-from="0.82" data-to="1">
+    <h2>You describe it. Claude directs it.</h2>
+  </div>
+</mashhad-film>
+
+<section class="copy">
+  <h2>A 3D director inside Claude Code.</h2>
+  <p>Tell Claude what your site is about. It pitches scenes, builds the one you pick in Blender with real
+  scanned materials, looks at its own frames and fixes them like a cinematographer, then renders a desktop
+  and a phone version and drops them into your page as a scroll-driven film.</p>
+  <p>Your logo stays exact, in any language. Nothing is uploaded.</p>
+</section>
+
+<mashhad-film src="films/fintech-card" length="380">
+  <div class="beat top" data-from="0" data-to="0.35">
+    <div class="kicker">Same plugin, another brand</div>
+    <h2>Products, logos, type, places.</h2>
+  </div>
+  <div class="beat bottom" data-from="0.75" data-to="1">
+    <p class="lede">A black metal card, a gold chip, a light that sweeps across it. All built from code.</p>
+  </div>
+</mashhad-film>
+
+<section class="copy">
+  <h2>Try it.</h2>
+  <p>Install <a href="https://www.blender.org/download/" style="color:inherit">Blender</a> (free), then in Claude Code:</p>
+  <pre>/plugin marketplace add M-Alkassem/mashhad
+/plugin install mashhad@mashhad</pre>
+  <p>Then, in your site's folder: <code>Make a cinematic 3D scroll hero for this landing page.</code></p>
+  <a class="cta" href="https://github.com/M-Alkassem/mashhad">Get it on GitHub</a>
+</section>
+
+<footer>Open source, MIT. Scanned assets from <a href="https://polyhaven.com">Poly Haven</a> (CC0).</footer>
+</body>
+</html>

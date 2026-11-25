@@ -1,0 +1,11 @@
+{
+  "name": "mashhad",
+  "version": "0.1.0",
+  "description": "Cinematic 3D scroll scenes for any landing page, directed by Claude and rendered free on your own computer with Blender.",
+  "author": {
+    "name": "M-Alkassem",
+    "url": "https://github.com/M-Alkassem"
+  },
+  "repository": "https://github.com/M-Alkassem/mashhad",
+  "license": "MIT"
+}

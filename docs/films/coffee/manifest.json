@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "fps": 24,
+  "variants": {
+    "landscape": {
+      "frames": 120,
+      "width": 1280,
+      "height": 720,
+      "path": "landscape/{n}.jpg",
+      "pad": 4
+    },
+    "portrait": {
+      "frames": 120,
+      "width": 720,
+      "height": 1280,
+      "path": "portrait/{n}.jpg",
+      "pad": 4
+    }
+  }
+}
